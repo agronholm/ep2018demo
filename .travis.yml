@@ -1,6 +1,7 @@
 language: python
 sudo: false
 cache: pip
+python: "3.6"
 
 stages:
   - name: test
@@ -10,7 +11,6 @@ stages:
 jobs:
   include:
     - env: TOXENV=py36
-      python: "3.6"
 
       # https://github.com/travis-ci/travis-ci/issues/9815
     - env: TOXENV=py37
